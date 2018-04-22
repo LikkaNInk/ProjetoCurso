@@ -7,6 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
+  /* carrosel */
+  cp2: string = '../../assets/image/pokefest.jpg';
+  cpf: string = '../../assets/image/pokego.jpg';
+  cp1: string = '../../assets/image/pokego2.jpg';
+
+
+
+
+
+
+
+
   constructor() { }
 
   ngOnInit() {

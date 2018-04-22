@@ -1,0 +1,72 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" *ngIf="mostrarinfo; else mi" id="tm">
+      <div id="cardcss" class="card" style="width: 18rem;">
+        <img class="card-img-top" [src]="caminho_value" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{ tv }}</h5>
+          <p class="card-text">{{ cv }}</p>
+          <button (click)="esconderinfo()" type="button" class="btn btn-dark">Leia Mais</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<ng-template #mi>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">{{ tv }}</h1>
+      <p class="lead">{{ dv }}</p>
+      <button (click)="Voltar()" type="button" class="btn btn-secondary">Voltar</button>
+      <button (click)="Alerta()" type="button" class="btn btn-success">Juntar-se ao Time!</button>
+    </div>
+  </div>
+</ng-template>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" *ngIf="mostrarinfo2; else me" id="SJ">
+      <div id="cardcss2" class="card" style="width: 18rem;">
+        <img class="card-img-top" [src]="caminho_instinct" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{ tm }}</h5>
+          <p class="card-text">{{ cm }}</p>
+          <button (click)="esconderinfo2()" type="button" class="btn btn-dark">Leia Mais</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<ng-template #me>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">{{ tm }}</h1>
+      <p class="lead">{{ dm }}</p>
+      <button (click)="Voltar2()" type="button" class="btn btn-secondary">Voltar</button>
+      <button (click)="Alerta()" type="button" class="btn btn-success">Juntar-se ao Time!</button>
+    </div>
+  </div>
+</ng-template>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" *ngIf="mostrarinfo3; else mu" id="TM">
+      <div id="cardcss3" class="card" style="width: 18rem;">
+        <img class="card-img-top" [src]="caminho_mystic" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{ ti }}</h5>
+          <p class="card-text">{{ ci }}</p>
+          <button (click)="esconderinfo3()" type="button" class="btn btn-dark">Leia Mais</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<ng-template #mu>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">{{ ti }}</h1>
+      <p class="lead">{{ di }}</p>
+      <button (click)="Voltar3()" type="button" class="btn btn-secondary">Voltar</button>
+      <button (click)="Alerta()" type="button" class="btn btn-success">Juntar-se ao Time!</button>
+    </div>
+  </div>
+</ng-template>

@@ -4,7 +4,10 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
-import { MenuComponent } from './menu/menu.component';
+import { CorpoDoSiteModule } from './corpo-do-site/corpo-do-site.module';
+import { MenuComponent } from './corpo-do-site/menu/menu.component';
+import { CardsComponent } from './corpo-do-site/cards/cards.component';
+import { SobreComponent } from './corpo-do-site/sobre/sobre.component';
 
 
 
@@ -12,12 +15,17 @@ import { MenuComponent } from './menu/menu.component';
   declarations: [
     AppComponent,
     CabecalhoComponent,
-    MenuComponent
+    MenuComponent,
+    CardsComponent,
+    SobreComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CorpoDoSiteModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+
+  
 })
 export class AppModule { }
